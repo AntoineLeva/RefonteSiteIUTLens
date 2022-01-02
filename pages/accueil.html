@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>Départements informatiques - Accueil</title>
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../ressources/style.css">
+        <link rel="stylesheet" type="text/css" href="../ressources/style2.css">
+        <script src="https://kit.fontawesome.com/1481fe7b2b.js" crossorigin="anonymous"></script>
+    </head>
+	<body>
+        <div class="topnav">
+            <div class="search-container">
+              <form action="">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <nav class="sidebar">
+                <header>IUT</header>
+                <div class="dropdown">
+                    <button class="dropdown-btn">AUTRES ACCES
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <li><a href="../pages/entreprise.html"></i>ACCES ENTREPRISES</a></li>
+                        <li><a href="#"></i>ACCES ENSEIGNANTS</a></li>
+                    </div>
+                </div>
+                <script>
+                    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+                    var dropdown = document.getElementsByClassName("dropdown-btn");
+                    var i;
+                    
+                    for (i = 0; i < dropdown.length; i++) {
+                      dropdown[i].addEventListener("click", function() {
+                      this.classList.toggle("active");
+                      var dropdownContent = this.nextElementSibling;
+                      if (dropdownContent.style.display === "block") {
+                      dropdownContent.style.display = "none";
+                      } else {
+                      dropdownContent.style.display = "block";
+                      }
+                      });
+                    }
+                </script>
+
+            </nav>
+        <section></section>
+
+        <main>
+            <section class="titre">
+                <h1>Bienvenue sur le portail des "IUT info" / Welcome on "IUT info" portal
+                </h1>
+            </section>
+            <section class="texte">
+                <h2>Nous vous souhaitons une bonne visite sur le site / We wish you a good visit on the site</h2>
+            </section>
+            <section class="francais">
+                <p>Pour continuer vers le site en français, cliquez ici :</p>
+                <a href="../indexfinal.html"><img src="../images/Drapeau-francais-1024x1024.png" height=250px widht=250px alt="fr"/></a>    
+            </section>
+
+            <section class="anglais">
+                <p>If you don't speak french, please click here :</p>
+                <a href="indexangl.html"><img src="../images/drapeau-anglais-rond.png" height=250px widht=250px alt="en"/></a>
+            </section>
+
+            <section class="texte">
+                <h3>
+                    <p>Ce portail décrit les informations proposés dans les départements d'informatique des IUT, DUT et licence professionnelle : <br/>
+                        <a class="italique" href="../indexfinal.html"> Qu'est-ce que l'IUT ?</a><br/>
+	                    <a class="italique" href="departement.html"> La formation à l'informatique</a><br/>
+	                    <a class="italique" href="iutprogramme.html">Pourquoi c'est mieux à l'IUT ?</a><br/>
+	                    <a class="italique" href="iutpoursuites.html">Nos licences professionnelles</a>
+                    </p>
+                </h3>
+            </section>
+
+            <div>
+                <h3>
+                    <p>
+                        Pour signaler un problème ou faire des remarques et suggestions sur ce site : <br/>
+                        <a class="italique" href="mailto:webmaster@iut-informatique.fr">webmaster@iut-informatique.fr</a>
+                    </p>
+                </h3>
+            </div>
+
+        <div id="logo">
+            <a href="accueil.html"><img src="../images/logo_iut.png"></a>
+        </div>
+
+        <footer>Un problème rencontré ? <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqyOVs7lWrvHhKgC5DpOV9AiJ8ekZEYcteUXvkcInH4ldb-g/viewform?usp=sf_link">Contactez nous</a></footer>
+        </main>
+    </body>
+    
+</html>
+

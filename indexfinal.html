@@ -1,0 +1,115 @@
+﻿<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>Départements informatiques - Présentation</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="ressources/style2.css">
+        <link rel="stylesheet" type="text/css" href="ressources/style3.css">
+        <script src="https://kit.fontawesome.com/1481fe7b2b.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+        <div class="topnav">
+            <div class="search-container">
+              <form action="">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+        <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+        <nav class="sidebar">
+            <header>IUT</header>
+            <ul class="">
+                <li><a href="pages/accueil.html">ACCUEIL/HOME</a></li>
+                <li><a href="indexfinal.html">PRESENTATION</a></li>
+            </ul>
+            <section>
+                <div class="dropdown">
+                    <button class="dropdown-btn">FORMATION
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <li><a href="pages/iutetcarte.html">L'IUT et carte</a></li>
+                        <li><a href="pages/departement.html">Département Info</a></li>
+                        <li><a href="pages/iutprogramme.html">Programme</a></li>
+                    </div>
+                </div>
+            </section>
+            
+            <div>
+                <section>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">APRES L'IUT
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <li><a href="pages/iutdebouches.html">Débouchés</a></li>
+                            <li><a href="pages/iutpoursuites.html">Poursuite d'étude</a></li>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section>
+                <ul class="">
+                    <li><a href="pages/passageBut.html">PASSAGE AU BUT</a></li>
+                    <li><a href="pages/temoignage.html">TEMOIGNAGE</a></li>
+                    <li><a href="pages/lien.html">LIENS</a></li>
+                    <li><a href="pages/partenariat.html">PARTENARIATS</a></li>
+                    <li><a href="pages/entreprise.html">ENTREPRISES</a></li>
+                </ul> 
+            </section>
+            <script>
+                /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+                var dropdown = document.getElementsByClassName("dropdown-btn");
+                var i;
+                
+                for (i = 0; i < dropdown.length; i++) {
+                  dropdown[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var dropdownContent = this.nextElementSibling;
+                  if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                  } else {
+                  dropdownContent.style.display = "block";
+                  }
+                  });
+                }
+            </script>
+        </nav>
+
+
+        <main>
+            <section class="titre">
+                <h1> Départements informatiques </h1>
+            </section>
+            <div class="banniere">
+                <img src="images/INFO-1024x318.png"/>
+            </div>
+            <section class="paragraphe3">
+                <h2> IUT informatique </h2>
+                Afin de faciliter une insertion dans la vie professionnelle, les étudiants sont formés à l’informatique et au travail en équipe, formation qu’ils peuvent recevoir dans les différents départements informatique des IUT de France. Ces établissements proposent ainsi une formation complète, assistée par des professionnels et professeurs, présents pour apporter leur savoir et expérience aux étudiants, en recherche de connaissances nouvelles. 3 grands domaines permettent donc de concevoir un enseignement nécessaire en informatique (en DUT ou Licence Professionnelle) :
+                <h2> Analyse et conception : </h2>
+                Analyse des besoins du client afin de répondre de la meilleure façon possible dans le but de répondre à ses attentes, suite à la réalisation d’un traitement informatique.<br>
+                Ouverture d’esprit, capacité de réflexion et de synthèse, communication …
+                <h2> Algorithmique et programmation : </h2>
+                Mise en place d’une succession d’ordres afin d’aboutir à une solution effective, allant du traitement jusqu’au codage. <br>
+                Esprit logique, réflexion, justesse technique …
+                <h2> Architecture système et réseaux : </h2>
+                Etude du fonctionnement d’un ordinateur, son système d’exploitation ainsi que ses réseaux.  <br>
+                Nécessité d’être patient, curieux, soif de nouveautés …
+                <h2> IUT informatique </h2>
+                D’autres matières générales viennent s’ajouter à ces quelques enseignements tels que les Mathématiques, Economie et Gestion, Anglais ou encore Communication. Ainsi, l’évaluation s’effectue sur une multitude de matières différentes, et non seulement sur un aspect théorique mais aussi pratique via des projets tutorés, stage en entreprise, favorisant notamment l’apport d’expérience professionnelle, et permettant une évaluation des connaissances et compétences acquises lors de la formation.
+            </section>
+            <div id="logo">
+                <a href="pages/accueil.html"><img src="images/logo_iut.png"></a>
+            </div>        
+            <footer>Un problème rencontré ? <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqyOVs7lWrvHhKgC5DpOV9AiJ8ekZEYcteUXvkcInH4ldb-g/viewform?usp=sf_link">Contactez nous</a></footer>
+        </main>
+        
+	</body>
+</html>

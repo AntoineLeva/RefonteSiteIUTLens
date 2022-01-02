@@ -1,0 +1,240 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    right: 200px;
+}
+nav{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    top: 0px;
+    background: #042331;
+    transition: all .5s ease;
+}
+nav header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+}
+nav ul ul{
+    position: absolute;
+}
+nav ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 55px;
+    font-size: 20px;
+    color: white;
+    padding-left: 4px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+nav ul li:hover a{
+    padding-left: 40px;
+}
+nav ul a i{
+    margin-right: 16px;
+}
+div section{
+    margin-top: -190px;
+}
+#check{
+    display: none;
+}
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+}
+label #btn{
+    position: fixed;
+    left: 40px;
+    top: 25px;
+    font-size: 35px; 
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel{
+    position: fixed;
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+#check:checked ~ section{
+    margin-left: 250px;
+}
+.sidebar a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+.main {
+    margin-left: 200px; 
+    font-size: 20px; 
+    padding: 0px 10px;
+}
+.active {
+    color: white;
+}
+.dropdown-container {
+    display: none;
+    background-color: #042331;
+    padding-left: 8px;
+    margin-top: -10px;
+}
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+section{
+    text-align: left;
+    height: 40vh;
+    transition: all .5s ease;
+}
+section ul{
+    margin-top: -230px;
+}
+main section{
+    text-align: center;
+    height: 40vh;
+    transition: all .5s ease;
+}
+#logo{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+footer{
+    position: fixed;
+    width: 100%; 
+    height: 30px;
+    bottom: 0; left: 0; right: 0;
+    text-align: center;
+    background-color: #042331;
+    color: #FFF;
+    padding-top: 5px;
+}
+.titre{
+    text-align: center;
+    margin-left: 350px;
+    font-size: 30px;
+    margin-top: -25px;
+    text-decoration: underline;
+}
+
+.texte{
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.texte h2{
+    font-size: 15px;
+}
+.paragraphe1{
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 70px;
+}
+.paragraphe2{
+    text-align: left;
+    margin-left: 100px;
+    margin-top: -220px;
+    font-size: 15px;
+}
+.paragraphe3{
+    text-align: center;
+    font-size: 15px;
+    margin-top: -40px;
+}
+
+.camembert{
+    margin-left: 600px;
+    margin-top: -300px;
+}
+.DUT{
+    margin-left: 200px;
+    margin-top: -300px;
+}
+.Stage{
+    position: absolute;
+    top: 350px;
+    margin-left: 250px;
+}
+.image2{
+    margin-left: 100px;
+    margin-top: -50px;
+}
+.image3{
+    margin-left: 750px;
+    margin-top: -350px;
+}
+.banniere{
+    position: absolute;
+    top: 45px;
+    left: 250px;
+}
+.carte{
+    left: 300px;
+    height: -1000px;
+    width: -700px;
+    margin-top: -150px;
+    margin-left: 350px;
+    margin-bottom: 50px;
+}
+.BUT{
+    margin-left: 100px;
+    margin-top: -120px;
+}
+.BUT2{
+    margin-left: 800px;
+    margin-top: -430px;
+}
+
+.photoFB{
+    text-align: center;
+    margin-top: -270px;
+}

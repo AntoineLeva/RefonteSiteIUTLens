@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>Départements informatiques - Débouchés</title>
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../ressources/style2.css">
+        <link rel="stylesheet" type="text/css" href="../ressources/style3.css">
+        <script src="https://kit.fontawesome.com/1481fe7b2b.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+        <div class="topnav">
+            <div class="search-container">
+              <form action="">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+        <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+        <nav class="sidebar">
+            <header>IUT</header>
+            <ul class="">
+                <li><a href="../pages/accueil.html">ACCUEIL/HOME</a></li>
+                <li><a href="../indexfinal.html">PRESENTATION</a></li>
+            </ul>
+            <section>
+                <div class="dropdown">
+                    <button class="dropdown-btn">FORMATION
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <li><a href="iutetcarte.html">L'IUT et carte</a></li>
+                        <li><a href="departement.html">Département Info</a></li>
+                        <li><a href="iutprogramme.html">Programme</a></li>
+                    </div>
+                </div>
+            </section>
+            
+            <div>
+                <section>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">APRES L'IUT
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <li><a href="iutdebouches.html">Débouchés</a></li>
+                            <li><a href="iutpoursuites.html">Poursuite d'étude</a></li>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section>
+                <ul class="">
+                    <li><a href="passageBut.html">PASSAGE AU BUT</a></li>
+                    <li><a href="temoignage.html">TEMOIGNAGE</a></li>
+                    <li><a href="lien.html">LIENS</a></li>
+                    <li><a href="partenariat.html">PARTENARIATS</a></li>
+                    <li><a href="entreprise.html">ENTREPRISES</a></li>
+                </ul> 
+            </section>
+            <script>
+                /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+                var dropdown = document.getElementsByClassName("dropdown-btn");
+                var i;
+                
+                for (i = 0; i < dropdown.length; i++) {
+                  dropdown[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var dropdownContent = this.nextElementSibling;
+                  if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                  } else {
+                  dropdownContent.style.display = "block";
+                  }
+                  });
+                }
+            </script>
+        </nav>
+        <main>
+            <section class="titre">
+                <h1>Les Débouchés : 
+                </h1>
+            </section>
+            <section class="paragraphe2">
+                <h2>Après l'IUT(DUT ou LP)</h2>
+                Voici la liste des métiers, classés par catégories, accessibles via un DUT Informatique et/ou une Licence Professionnelle en Informatique.
+                <h2><br>Production et exploitation</h2>
+                Administrateur de bases de données, Administrateur systèmes et réseaux, Analyste d'exploitation, Gestionnaire de parc micro, Technicien help desk, Technicien réseaux et télécoms, Webdesigner, Webmaster.
+                <h2><br>Etudes, développement et intégration</h2>
+                Chefs de projet en SSII ou en TIC, Développeur de jeux vidéo multimédia, Analyste programmeur, Directeur de projet, Intégrateur, Paramétreur de PGI.
+                <h2><br>Administration et gestion de la DSI</h2>
+                Auditeur informatique, Directeur des systèmes d'information, Responsable des études, Responsable d'exploitation. 
+                <h2><br>Support et assistance technique</h2>
+                Chargé d'affaires interne, Formateur, Analyste système, Directeur technique, Responsable sécurité , Spécialiste sécurité, Spécialiste méthode, Architecte réseaux, Architecte technique, Architecte base de données.
+                <h2><br>Conseil en système d'information et maîtrise d'ouvrage (MOA)</h2>
+                Chef de projet MOA, Conseil - consultant en système d'information , Consultant en business intelligence, Consultant en sécurité, Consultant MOA , Consultant ERP , Consultant spécialisé sur des marchés non encore matures, Responsable en conduite du changement, Responsable de SI métier, Responsable de projet fonctionnel, Architecte du SI, Correspondant informatique.
+            </section>
+        </main>
+            <div id="logo">
+                <a href="accueil.html"><img src="../images/logo_iut.png"></a>
+            </div>
+            <footer>Un problème rencontré ? <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqyOVs7lWrvHhKgC5DpOV9AiJ8ekZEYcteUXvkcInH4ldb-g/viewform?usp=sf_link">Contactez nous</a></footer>
+        </main>
+        
+	</body>
+</html>

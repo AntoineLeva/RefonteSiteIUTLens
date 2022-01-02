@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>Départements informatiques - Poursuites d'études</title>
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../ressources/style2.css">
+        <link rel="stylesheet" type="text/css" href="../ressources/style3.css">
+        <script src="https://kit.fontawesome.com/1481fe7b2b.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+        <div class="topnav">
+            <div class="search-container">
+              <form action="">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+        <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+        <nav class="sidebar">
+            <header>IUT</header>
+            <ul class="">
+                <li><a href="../pages/accueil.html">ACCUEIL/HOME</a></li>
+                <li><a href="../indexfinal.html">PRESENTATION</a></li>
+            </ul>
+            <section>
+                <div class="dropdown">
+                    <button class="dropdown-btn">FORMATION
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <li><a href="iutetcarte.html">L'IUT et carte</a></li>
+                        <li><a href="departement.html">Département Info</a></li>
+                        <li><a href="iutprogramme.html">Programme</a></li>
+                    </div>
+                </div>
+            </section>
+            
+            <div>
+                <section>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">APRES L'IUT
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <li><a href="iutdebouches.html">Débouchés</a></li>
+                            <li><a href="iutpoursuites.html">Poursuite d'étude</a></li>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section>
+                <ul class="">
+                    <li><a href="passageBut.html">PASSAGE AU BUT</a></li>
+                    <li><a href="temoignage.html">TEMOIGNAGE</a></li>
+                    <li><a href="lien.html">LIENS</a></li>
+                    <li><a href="partenariat.html">PARTENARIATS</a></li>
+                    <li><a href="entreprise.html">ENTREPRISES</a></li>
+                </ul> 
+            </section>
+            <script>
+                /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+                var dropdown = document.getElementsByClassName("dropdown-btn");
+                var i;
+                
+                for (i = 0; i < dropdown.length; i++) {
+                  dropdown[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var dropdownContent = this.nextElementSibling;
+                  if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                  } else {
+                  dropdownContent.style.display = "block";
+                  }
+                  });
+                }
+            </script>
+        </nav>
+        <main>
+            <section class="titre">
+                <h1>Poursuites d'études : </h1>
+            </section>
+            <section class="paragraphe2">
+                <h2>Les poursuites d'études envisageables</h2>
+                La vocation première de l'IUT est de mener directement au monde professionnel, mais il est possible de poursuivre ses études si l'étudiant le souhaite réellement.
+                <h2><br>Après le DUT :</h2>
+                Ecoles d'ingénieurs (ENSIMAG, ISIM, ENSEIHT, IIE, ENSSAT, INT, INSA, IFIPS, UTC, ...), Licence et maîtrise d'informatique, Licence et maîtrise de sciences et techniques informatiques, IUP MIAGE (maîtrise des méthodes informatiques appliquées à la gestion), Formation complémentaires à l'étranger, Formation en alternance (préparation au DEST), Master informatique, Licence professionnelle systèmes informatiques et logiciels. 
+            </section>
+            <div class="image2">
+                <img src="../images/ecoleinfo.png"height="350" width="600"/>
+            </div>
+            <div class="image3">
+                <img src="../images/ecoleinfo2.jpg"height="350" width="600"/>     
+            </div>
+        </main>
+            <div id="logo">
+                <a href="accueil.html"><img src="../images/logo_iut.png"></a>
+            </div>
+            <footer>Un problème rencontré ? <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqyOVs7lWrvHhKgC5DpOV9AiJ8ekZEYcteUXvkcInH4ldb-g/viewform?usp=sf_link">Contactez nous</a></footer>
+        </main>
+        
+	</body>
+</html>

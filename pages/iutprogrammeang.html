@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>IT department - Study program</title>
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../ressources/style2.css">
+        <link rel="stylesheet" type="text/css" href="../ressources/style3.css">
+        <script src="https://kit.fontawesome.com/1481fe7b2b.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+        <div class="topnav">
+            <div class="search-container">
+              <form action="">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+        <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+        <nav class="sidebar">
+            <header>IUT</header>
+            <ul class="">
+                <li><a href="accueil.html">ACCUEIL/HOME</a></li>
+                <li><a href="indexangl.html">PRESENTATION</a></li>
+            </ul>
+            <section>
+                <div class="dropdown">
+                    <button class="dropdown-btn">TRAINING
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <li><a href="iutetcarteang.html">IUT and Map</a></li>
+                        <li><a href="departang.html">IUT Department</a></li>
+                        <li><a href="iutprogrammeang.html">Study Program</a></li>
+                    </div>
+                </div>
+            </section>
+            
+            <div>
+                <section>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">AFTER IUT 
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <li><a href="iutdebouchesang.html">Opening</a></li>
+                            <li><a href="iutpoursuitesang.html">Continuation of study</a></li>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section>
+                <ul class="">
+                    <li><a href="passageButang.html">PASSAGE TO BUT</a></li>
+                    <li><a href="temoiang.html">TESTIMONY</a></li>
+                    <li><a href="lienang.html">LINKS</a></li>
+                    <li><a href="partenariatang.html">PARTNERSHIPS</a></li>
+                    <li><a href="entrepriseang.html">COMPAGNY</a></li>
+                </ul> 
+            </section>
+            <script>
+                /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+                var dropdown = document.getElementsByClassName("dropdown-btn");
+                var i;
+                
+                for (i = 0; i < dropdown.length; i++) {
+                  dropdown[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var dropdownContent = this.nextElementSibling;
+                  if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                  } else {
+                  dropdownContent.style.display = "block";
+                  }
+                  });
+                }
+            </script>
+        </nav>
+        <main>
+            <section class="titre">
+                <h1>IUT Department </h1>
+            </section>
+            <section class="paragraphe3">
+                <h2>OFFICIAL PROGRAM</h2>
+                DUT option Computer Science Engineering<br>
+                English not yet available (our translation was not good)<br>
+                <a href="http://iut-informatique.fr/docs/ppn/fr.pdf"><img src="../images/france.svg" height=100px widht=100px alt="fr"/></a>
+                <a href="http://iut-informatique.fr/docs/ppn/de.pdf"><img src="../images/germany.svg" height=100px widht=100px alt="de"/></a>
+                <a href="http://iut-informatique.fr/docs/ppn/es.pdf"><img src="../images/spain.svg" height=100px widht=100px alt="esp"/></a>
+            </section>
+        </main>
+            <div id="logo">
+                <a href="accueil.html"><img src="../images/logo_iut.png"></a>
+            </div>
+            <footer>A problem encountered ? <a href="https://docs.google.com/forms/d/e/1FAIpQLSdd4KplL8m8_TdYnmgDCrE13wz2EbDwv6MuivF9EH63Dyl_cg/viewform?usp=sf_link">Contact us</a></footer>
+        </main>
+        
+	</body>
+</html>

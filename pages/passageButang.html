@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../ressources/style2.css">
+        <link rel="stylesheet" type="text/css" href="../ressources/style3.css">
+        <script src="https://kit.fontawesome.com/1481fe7b2b.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+        <div class="topnav">
+            <div class="search-container">
+              <form action="">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+        <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+        <nav class="sidebar">
+            <header>IUT</header>
+            <ul class="">
+                <li><a href="accueil.html">ACCUEIL/HOME</a></li>
+                <li><a href="indexangl.html">PRESENTATION</a></li>
+            </ul>
+            <section>
+                <div class="dropdown">
+                    <button class="dropdown-btn">TRAINING
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <li><a href="iutetcarteang.html">IUT and Map</a></li>
+                        <li><a href="departang.html">IUT Department</a></li>
+                        <li><a href="iutprogrammeang.html">Study Program</a></li>
+                    </div>
+                </div>
+            </section>
+            
+            <div>
+                <section>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">AFTER IUT 
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <li><a href="iutdebouchesang.html">Opening</a></li>
+                            <li><a href="iutpoursuitesang.html">Continuation of study</a></li>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section>
+                <ul class="">
+                    <li><a href="passageButang.html">PASSAGE TO BUT</a></li>
+                    <li><a href="temoiang.html">TESTIMONY</a></li>
+                    <li><a href="lienang.html">LINKS</a></li>
+                    <li><a href="partenariatang.html">PARTNERSHIPS</a></li>
+                    <li><a href="entrepriseang.html">COMPAGNY</a></li>
+                </ul> 
+            </section>
+            <script>
+                /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+                var dropdown = document.getElementsByClassName("dropdown-btn");
+                var i;
+                
+                for (i = 0; i < dropdown.length; i++) {
+                  dropdown[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var dropdownContent = this.nextElementSibling;
+                  if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                  } else {
+                  dropdownContent.style.display = "block";
+                  }
+                  });
+                }
+            </script>
+        </nav>
+        <main>
+            <section class="titre">
+                <h1> BUT </h1>
+            </section>
+            <section class="paragraphe2">
+                At the start of the 2021 school year, the DUT will disappear and will be replaced by the BUT, the university bachelor of technology.<br>
+                From the start of the 2021 school year, IUTs will have to offer a 3-year training course, granting students 180 ECTS credits. But beware the creation of this new diploma does not remove the DUT. Students on this new professional license course may also be sanctioned at the intermediate level of 120 credits (bac + 2 level) with the issuance of the DUT.
+                This new course in 3 years makes it possible to obtain the degree of license with the possibility of reorienting oneself from the 2nd year thanks to the play of the bridges envisaged in the decree which recalls that "the establishment ensures the flexibility of the courses and the reorientation of the students by organizing bridges between training courses ".
+                In the first year of BUT, at least 50% of technological baccalaureate holders should be accepted. The specialties already existing within the framework of the DUT should be kept. The decree provides for the monitoring of 2,000 hours of supervised training for specialties in the "production" sector and 1,800 hours for specialties in the "services" sector. A place would be made for work in project mode and the students would follow 600 hours of tutored project as well as 22 to 26 weeks of internship.
+                The university bachelor's degree in technology will be based, for two thirds of the volume of hours, on a national program and for one third on local adaptations thus making it possible to take into account the local environment and the reality of the professional world.
+            </section>
+            <div id="logo">
+                <a href="accueil.html"><img src="../images/logo_iut.png"></a>
+            </div>
+            <div class="BUT">
+                <img src="../images/But2.jpg"/>
+            </div>
+            <div class="BUT2">
+                <img src="../images/butInfo.jpg" height="400" width="600" />
+            </div>
+            <footer>A problem encountered ? <a href="https://docs.google.com/forms/d/e/1FAIpQLSdd4KplL8m8_TdYnmgDCrE13wz2EbDwv6MuivF9EH63Dyl_cg/viewform?usp=sf_link">Contact us</a></footer>
+        </main>
+	</body>
+</html>

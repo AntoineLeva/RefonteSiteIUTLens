@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>Départements informatiques - Témoignage</title>
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../ressources/style2.css">
+        <link rel="stylesheet" type="text/css" href="../ressources/style3.css">
+        <script src="https://kit.fontawesome.com/1481fe7b2b.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+        <div class="topnav">
+            <div class="search-container">
+              <form action="">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+        <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+        <nav class="sidebar">
+            <header>IUT</header>
+            <ul class="">
+                <li><a href="../pages/accueil.html">ACCUEIL/HOME</a></li>
+                <li><a href="../indexfinal.html">PRESENTATION</a></li>
+            </ul>
+            <section>
+                <div class="dropdown">
+                    <button class="dropdown-btn">FORMATION
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <li><a href="iutetcarte.html">L'IUT et carte</a></li>
+                        <li><a href="departement.html">Département Info</a></li>
+                        <li><a href="iutprogramme.html">Programme</a></li>
+                    </div>
+                </div>
+            </section>
+            
+            <div>
+                <section>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">APRES L'IUT
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <li><a href="iutdebouches.html">Débouchés</a></li>
+                            <li><a href="iutpoursuites.html">Poursuite d'étude</a></li>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section>
+                <ul class="">
+                    <li><a href="passageBut.html">PASSAGE AU BUT</a></li>
+                    <li><a href="temoignage.html">TEMOIGNAGE</a></li>
+                    <li><a href="lien.html">LIENS</a></li>
+                    <li><a href="partenariat.html">PARTENARIATS</a></li>
+                    <li><a href="entreprise.html">ENTREPRISES</a></li>
+                </ul> 
+            </section>
+            <script>
+                /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+                var dropdown = document.getElementsByClassName("dropdown-btn");
+                var i;
+                
+                for (i = 0; i < dropdown.length; i++) {
+                  dropdown[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var dropdownContent = this.nextElementSibling;
+                  if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                  } else {
+                  dropdownContent.style.display = "block";
+                  }
+                  });
+                }
+            </script>
+        </nav>
+        <main>
+            <section class="titre">
+                <h1> BUT </h1>
+            </section>
+            <section class="paragraphe2">
+                A la rentrée 2021, le DUT disparaîtra et sera remplacé par le BUT, le bachelor universitaire de technologie.<br>
+                A partir de la rentrée 2021, les IUT devront proposer un parcours de formation en 3 ans, conférant aux étudiants 180 crédits ECTS. Mais attention la création de ce nouveau diplôme ne supprime pas le DUT. Les étudiants de ce nouveau parcours de licence professionnelle pourront également être sanctionnés au niveau intermédiaire de 120 crédits (niveau bac + 2) avec la délivrance du DUT. 
+                Ce nouveau parcours en 3 ans permet d'obtenir le grade de licence avec la possibilité de se réorienter dès la 2e année grâce au jeu des passerelles prévues dans l'arrêté qui rappelle que "l'établissement assure la flexibilité des parcours et la réorientation des étudiants par l'organisation de passerelles entre formations".
+                En première année de BUT, au moins 50% de bacheliers technologiques devraient être accueillis. Les spécialités existantes déjà dans le cadre du DUT devraient être conservées. L'arrêté prévoit le suivi de 2 000 heures d'enseignements encadrés pour les spécialités du secteur "production" et 1 800 heures pour les spécialités du secteur d'activités "services". Une place serait faite au travail en mode projet et les étudiants suivraient 600 heures de projet tutoré ainsi que 22 à 26 semaines de stage.
+                Le bachelor universitaire de technologie s'appuiera, pour deux tiers du volume d'heures, sur un programme national et pour un tiers sur des adaptations locales permettant ainsi de prendre en compte l'environnement local et la réalité du monde professionnel. 
+            </section>
+            <div id="logo">
+                <a href="accueil.html"><img src="../images/logo_iut.png"></a>
+            </div>
+            <div class="BUT">
+                <img src="../images/But2.jpg"/>
+            </div>
+            <div class="BUT2">
+                <img src="../images/butInfo.jpg" height="400" width="600" />
+            </div>
+            <footer>Un problème rencontré ? <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqyOVs7lWrvHhKgC5DpOV9AiJ8ekZEYcteUXvkcInH4ldb-g/viewform?usp=sf_link">Contactez nous</a></footer>
+        </main>
+	</body>
+</html>
